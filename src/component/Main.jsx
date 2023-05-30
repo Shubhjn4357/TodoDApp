@@ -214,7 +214,6 @@ const Main=({component})=> {
             </Stack>
         </Stack>
   )
-  console.log(loading)
   return (
     <Box sx={{ display: 'flex', flexShrink: { sm: 1 } }}>
       <div className={`loader ${loading?'d-block':'d-none'}`}>

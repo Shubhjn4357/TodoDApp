@@ -96,7 +96,7 @@ const Dashboard=()=>{
                             </Stack>
                         </StyledGrid>
                 })}
-                <StyledGrid md={4} sm={6}>
+                <StyledGrid sm={4}>
                 <StyledTextField value={''}                                    
                                         onChange={(e)=>''}
                                         disabled
@@ -109,7 +109,7 @@ const Dashboard=()=>{
                                             ),
                                             endAdornment:(
                                                 <InputAdornment position="end">
-                                                    <IconButton onClick={()=>''}><AddIcon/></IconButton>
+                                                    <IconButton onClick={CreateTodo}><AddIcon/></IconButton>
                                               </InputAdornment>
                                             )
                                           }}/>
