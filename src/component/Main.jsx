@@ -209,13 +209,16 @@ const Main=({component})=> {
                 </Stack>
                 <Stack direction='row' className='theme-box'>
                   <IconButton size='small' sx={{color:'var(--grey)'}}><LanguageIcon/></IconButton>
+                
                   <ThemeSwitch checked={Theme.checked} onChange={()=>ToggleTheme()}/>
                 </Stack>
             </Stack>
         </Stack>
   )
   return (
-    <Box sx={{ display: 'flex', flexShrink: { sm: 1 } }}>
+    <Box sx={{ display: 'flex', flexShrink: { sm: 1 }}}>
+      <span className={Theme.checked?'blog-white':'d-none'}></span>
+      <span className={!Theme.checked?'blog-black':'d-none'}></span>
       <div className={`loader ${loading?'d-block':'d-none'}`}>
         <div className='loader-container'>
           <span></span>
@@ -283,7 +286,7 @@ const Main=({component})=> {
       </StyledDrawer>
       <Box
         component="main"
-        sx={{ flexGrow: 0,mr:{sm:(newTodo.state)?'250px':0},background:'var(--black)',color:'var(--white)', px: 0 ,py:5,height:'100%'}}
+        sx={{ flexGrow: 0,mr:{sm:(newTodo.state)?'250px':0},background:'var(--black)',color:'var(--white)', px: 0 ,py:5,height:'100%',overflowY:'hidden' }}
       >
         <Toolbar ></Toolbar>
         {component}

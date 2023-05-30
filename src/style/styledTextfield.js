@@ -10,7 +10,11 @@ export const StyledTextField=styled(TextField)({
         '& .MuiTypography-root':{
             color:'var(--white)',
             fontWeight:'bolder',
-        }
+        },
+        '& .MuiInputButton-root:disabled':{
+                color:'var(--white)',
+            }
+        
     }
 }
 })

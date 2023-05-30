@@ -71,6 +71,24 @@
     color:var(--darkblue);
     margin-inline: 0.2rem;
 }
+.blog-black, .blog-white{
+    position:absolute;
+    bottom:-50%;
+    left:-20%;
+    z-index: 5000;
+    width:700px;
+    height:700px;
+    border-radius: 50%;
+    transform:scale(0);
+    transition: all 1s ease-out ;
+    animation: themer 1s ease-out;
+}
+.blog-black{
+    background:var(--darkblue);
+}
+.blog-white{
+    background:var(--white);
+}
 @keyframes slides {
     0%{
         transform: translateX(0);
@@ -80,5 +98,17 @@
     }
     100%{
         transform: translateX(0);
+    }
+}
+@keyframes themer {
+    from{
+        
+        opacity:1;
+        transform: scale(0);
+    }
+    to{
+        opacity:0;
+        transform:scale(3);
+        
     }
 }

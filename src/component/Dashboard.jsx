@@ -55,7 +55,7 @@ const Dashboard=()=>{
         <Box sx={{flexGrow:1}} className='d-center'>
           <DeleteConfirmationBox open={Prompt.state} close={()=>handlePrompt({state:false})} type={Prompt.type}/>
             {list?.length>0?
-            <Grid sx={{p:2}} spacing={2}>
+            <Grid sx={{p:2,mx:0}} container spacing={2}>
                 {list?.map((item)=>{
                     return <StyledGrid md={4} sm={6} key={item.id}> 
                             <Stack spacing={2}>
@@ -96,7 +96,7 @@ const Dashboard=()=>{
                             </Stack>
                         </StyledGrid>
                 })}
-                <StyledGrid sm={4}>
+                <StyledGrid md={4} sm={6}>
                 <StyledTextField value={''}                                    
                                         onChange={(e)=>''}
                                         disabled
