@@ -4,7 +4,7 @@
   --semiblack:rgba(0, 0, 0, 0.541);
   --white:rgb(226, 226, 226);
   --blue:rgb(0, 0, 255);
-  --grey:rgb(141, 141, 141);
+  --grey:rgb(116, 116, 116);
   --darkblue:rgb(52, 0, 173);
   --semitrans:rgb(255,255,255,0.5);
   --skyblue:rgb(9, 152, 209);
@@ -20,7 +20,7 @@ html[data-theme='dark']{
 html[data-theme='light']{
   --black:rgb(226, 226, 226);
   --lightblack:rgb(192, 192, 192);
-  --semiblack:rgba(226, 226, 226, 0.541);
+  --semiblack:rgba(182, 182, 182, 0.541);
   --white:rgb(3, 3, 3);
 }
 body {

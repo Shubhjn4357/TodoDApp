@@ -7,7 +7,8 @@ export const StyledDrawer=styled(Drawer)({
     '& .MuiDrawer-paper':{
         background:'var(--black)',
         width: drawerWidth,
-        borderLeft:'0.5rem solid var(--darkblu)',
+        borderRadius:'0.5rem',
+        borderRight:'0.5rem solid var(--darkblue)',
         boxSizing: 'border-box',
         '& .MuiDivider-root':{
             borderColor:'var(--darkblue)'
@@ -38,7 +39,7 @@ export const StyledDrawer=styled(Drawer)({
         },
         '& .MuiIconButton-root':{
             '& svg':{
-                color:'var(--white)'
+                color:'var(--grey)'
             }
         }
     } 

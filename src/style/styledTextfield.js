@@ -4,7 +4,7 @@ export const StyledTextField=styled(TextField)({
 '& .MuiInputBase-root':{
     background:'var(--lightblack)',
     color:'var(--white)',
-    borderRadius:'1rem',
+    borderRadius:'0.5rem',
     fontWeight:'bolder',
     '& .MuiInputAdornment-root':{
         '& .MuiTypography-root':{
